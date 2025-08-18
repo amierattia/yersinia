@@ -106,7 +106,8 @@ extern int8_t parser_get_formated_inet_address(u_int32_t, char *, u_int16_t);
 
 /* Terminal stuff */
 extern struct terminals *terms;
-extern int8_t term_add_node(struct term_node **, int8_t, int32_t, pthread_t);
+extern int8_t term_add_node(struct term_node **, int8_t, void *, pthread_t);
+
 
 /* Attack stuff */
 extern int8_t attack_stp_learn_packet(void);
