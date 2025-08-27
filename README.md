@@ -1,16 +1,22 @@
-command to install & Run Tool :
 
-sudo apt update && apt upgrade -y
-sudo apt install gettext autopoint libtool -y
-sudo apt install libnet1 libnet1-dev -y
-sudo make installsudo apt install libgtk2.0-dev pkg-config -y
+##  Command to Install & Run Yersinia
+
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y gettext autopoint libtool
+sudo apt install -y libnet1 libnet1-dev
+sudo apt install -y libgtk2.0-dev pkg-config build-essential git autoconf automake
+
 git clone https://github.com/amierattia/yersinia.git
-cd  yersinia
+cd yersinia
+
 autoupdate
 autoreconf -i
 ./configure
 make
-cd src 
+sudo make install
+
+cd src
 sudo ./yersinia -G
 
 
