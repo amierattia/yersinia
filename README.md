@@ -1,3 +1,20 @@
+command to install & Run Tool :
+
+sudo apt update && apt upgrade -y
+sudo apt install gettext autopoint libtool -y
+sudo apt install libnet1 libnet1-dev -y
+sudo make installsudo apt install libgtk2.0-dev pkg-config -y
+git clone https://github.com/amierattia/yersinia.git
+cd  yersinia
+autoupdate
+autoreconf -i
+./configure
+make
+cd src 
+sudo ./yersinia -G
+
+
+
 [![Build Status](https://travis-ci.org/tomac/yersinia.svg?branch=master)](https://travis-ci.org/tomac/yersinia)
 
 Spanning Tree
